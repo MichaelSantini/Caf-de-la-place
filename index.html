@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div id="leftBox">
+    <h2>Menu :</h2>
+    <input  type="text" id="inputName" placeholder="Nom du produit">
+    <input min="0" type="number" id="inputNb" placeholder="Quantité de produit">
+    <input type="text" id="inputPrice" placeholder="Prix du produit"><br>
+    <select id="typeDrink">
+        <option id="soft" value="Boisson froide">- Boisson froide -</option>
+        <option id="hot" value="Boisson chaude">- Boisson chaude -</option>
+        <option id="alc" value="Boisson alcoolisée">- Boisson alcoolisée -</option>
+    </select><br>
+    <input placeholder="Achat HT" id="inputAchatHT" type="text"><input placeholder="Vente HT" id="inputVenteHT" type="text">
+    <input id="degree" type="number" placeholder="Degrée ( °)">
+    <button id="btnValidate">VALIDER</button>
+    <button id="btnHisto">Historique</button>
+    <button id="btnRetirerHisto">Retirer Historique</button>
+
+
+</div>
+
+<div id="rightBox">
+    <div id="boxHisto">
+        <h4>Historique</h4>
+        <table>
+            <tr>
+                <th>Date du changement</th>
+                <th>Motif du changement</th>
+                <th>Intitulé du changement</th>
+            </tr>
+            <tbody>
+        
+            </tbody>
+        </table>
+    </div>
+<h3>Liste des Produits enregistrés :</h3>
+
+<table id="tableSoft">
+    <tr><th class="thOne">Référence </th>
+        <th class="thOne">Nom du Produit</th>
+        <th>Quantité en Stock</th>
+        <th class="thOne">Prix du Produit</th>
+        <th>Catégorie</th>
+        <th>Achat HT</th>
+        <th>Vente HT</th>
+        <th>Marge HT</th>
+        <th>Vente TTC</th>
+        <th>Intéraction</th>
+    </tr>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+<br>
+
+</div>
+
+<script type="text/javascript" src="general.js"></script>
+<script type="text/javascript" src="froide.js"></script>
+<script type="text/javascript" src="chaude.js"></script>
+<script type="text/javascript" src="alcool.js"></script>
+
+
+<script type="text/javascript" src="function.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    background-color: antiquewhite;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#leftBox{
+text-align: center;
+    width: 13%;
+    height: 100vh;
+    background-image: linear-gradient(225deg, #cfcfcf 0, #c9c3c9 16.67%, #c1b7c3 33.33%, #b7aabe 50%, #ab9eba 66.67%, #9f93b6 83.33%, #918ab4 100%);
+    border-right: 2px solid blue;
+
+}
+
+input , select, button{
+    border: none;
+    border-bottom: 2px solid blue;
+    margin: 10px;
+    padding: 10px;
+    width: 160px;
+    border-radius: 5px;
+}
+
+select, button{
+    cursor: pointer;
+}
+#rightBox{
+    background-image: linear-gradient(225deg, #bbb46e 0, #baab62 12.5%, #b9a255 25%, #b89748 37.5%, #b78c3b 50%, #b6802f 62.5%, #b57525 75%, #b56a1d 87.5%, #b55e17 100%);
+padding: 10px;
+width: 87%;
+overflow:auto;
+height: 97vh;
+
+}
+
+#inputAchatHT , #inputVenteHT{
+    display: inline-block;
+    width: 55px;
+}
+table{
+    width: 100%;
+
+}
+th{
+    margin: 0;
+    background-color: rgb(140, 223, 248);
+    padding: 5px;
+    border-bottom: 4px solid blue;
+    border-radius: 5px 5px 0 0;
+    font-size: 15px;
+}
+
+#soft , #hot , #alc{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#soft{
+    color : blue;
+}
+#hot{
+    color: brown;
+}
+
+#alc{
+    color: red;
+}
+
+h3 {
+    font-size: 20px;
+    border-bottom: 5px solid blue;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 450px;
+
+}
+
+button:hover{
+    color: white;
+    background-color: blue;
+    font-weight: 600;
+}
+
+/* Scrollbar design*/
+::-webkit-scrollbar {
+    width: 10px;
+
+    background-image: linear-gradient(225deg, #bbb46e 0, #baab62 12.5%, #b9a255 25%, #b89748 37.5%, #b78c3b 50%, #b6802f 62.5%, #b57525 75%, #b56a1d 87.5%, #b55e17 100%);
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #84732B; 
+  }
+
+::-webkit-scrollbar-thumb {
+    background: blue; 
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(140, 223, 248);
+  }
+
+
+
+
+
+  #boxHisto{
+      z-index: 10000;
+    display: none;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+
+    border: 2px solid blue;
+    border-radius: 10px;
+
+}
